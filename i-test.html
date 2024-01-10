@@ -1,6 +1,7 @@
 <script>
-  window.failedOpenObj = {"isFailedOpen": ()=>{return true;}}
+  window.failedOpenObj = {"isFailedOpen": ()=>{console.log("is failed open received, intercepted...");return true;}}
   window.featureConfig = {"isAwareOnly": true}
+  window.stop = ()=>{console.log("attempted to stop browser. nuh uh.");}
   console.log("finish")
 </script>
 
